@@ -1,2 +1,10 @@
 # Green Science & Technology Journal
-Weakly-Supervised Learning for Whole-Slide Image Classification and Its Feature Analysis in Digital Pathology
+<b>Weakly-Supervised Learning for Whole-Slide Image Classification and Its Feature Analysis in Digital Pathology </b><br>
+<b>弱監督學習下的數位病理切片分類與特徵分析</b><br>
+
+<b>摘要</b><br>
+隨著深度學習架構在影像分類、偵測、分割應用上的蓬勃發展，各模態的醫學影像分析任務也紛紛導入人工智慧的技術以達到臨床輔助診斷的目的。然而，監督式的學習方式需要大量且精準的標註資訊，在醫學領域上會大幅提高電腦輔助診斷系統的開發成本。尤其是涉及到gigapixel量級的數位病理全玻片影像，對應的病灶區域標註不但耗時且需要非常專業的病理知識，成為數位病理在AI輔助系統開發上的瓶頸。因此，弱監督學習方式在系統開發上只需要數位玻片的分類資訊而不需要全玻片影像中對應代表特徵或病灶的區域輪廓標註，對數位病理領域上有很大的研究動機。本研究從TCGA資料庫中對12個常見癌別蒐集了6,508個病患的全玻片影像，並依7:3的比例隨機分為訓練集與測試集。實驗中將弱監督學習中非直接標註的問題轉換成帶噪學習的應用，並使用ResNet50的模型訓練隨機採樣的病理區塊影像。雖然模型的訓練集中參雜了不具該分類標住所對應特徵的採樣，但在測試集案例推論上藉由多數決方式以降低雜訊採樣或錯誤預測所造成的影響，讓系統在5分類與12分類的測試集上分別達到了96.03% 與92.12%的分類準確率。訓練模型在統計上的重要特徵分析結果也顯示模型能有效地找出各類別所對應的代表特徵採樣，為帶噪學習訓練下的模型提供了有效性與可解釋性。
+
+<b>關鍵詞：帶噪學習、數位病理、全玻片影像、特徵分析</b>
+
+論文網址:[https://gpi.culture.tw/books/101130073](https://wcse.nttu.edu.tw/p/405-1023-157379,c11406.php)
